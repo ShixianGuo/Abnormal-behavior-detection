@@ -7,10 +7,10 @@ def is_inside(o, i):
     # 如果符合条件，返回True，否则返回False
     return ox > ix and oy > iy and ox + ow < ix + iw and oy + oh < iy + ih
 
-# 根据坐标画出人物所在的位置
 def draw_person(img, person):
   x, y, w, h = person
   cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 255), 2)
+
 
 
 # 图片识别方法
