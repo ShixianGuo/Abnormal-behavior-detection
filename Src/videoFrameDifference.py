@@ -69,7 +69,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0,255,0), 2)
         text = "Occupied!"
 
-    cv2.putText(frame, "Room Status: {}".format(text), (10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 2)
+    v2.putText(frame, "Room Status: {}".format(text), (10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 2)
 
     cv2.imshow('frame', frame)
     # cv2.imshow('thresh', thresh)
